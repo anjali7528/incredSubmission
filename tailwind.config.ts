@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        buttongreen: "#00b386",
+        buttonHoverGreen:"#66e3c4",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
