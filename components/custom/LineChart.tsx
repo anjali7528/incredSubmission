@@ -18,8 +18,7 @@ Chart.register(
   ArcElement
 );
 
-const LineChart = ({label, value}:{label:string[], value:number[]}) => {
-   
+const LineChart = ({ label, value }: { label: string[]; value: number[] }) => {
   const data = {
     labels: label,
     datasets: [
@@ -27,15 +26,33 @@ const LineChart = ({label, value}:{label:string[], value:number[]}) => {
         label: "Sales",
         data: value,
         fill: false,
-        borderColor: "rgb(75, 192, 192)",
+        borderColor: "rgba(211, 84, 0)",
         tension: 0.1,
+        pointBackgroundColor: "rgba(211, 84, 0)",
       },
     ],
   };
 
+  const options = {
+    scales: {
+      y: {
+        display: false, // Remove y-axis
+      },
+      x: {
+        display: false, // Remove y-axis
+      },
+    },
+    plugins: {
+      tooltip: {
+        enabled: true,
+      },
+      
+    },
+  };
+
   return (
     <div>
-      <Line data={data} />
+      <Line data={data} options={options} />
     </div>
   );
 };
