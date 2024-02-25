@@ -3,23 +3,24 @@ import React, { useEffect, useState, useCallback } from "react";
 import LineChart from "./LineChart";
 import { Badge } from "@/components/ui/badge";
 import SliderTabs from "./SliderTabs";
-import { BADGEDATA, LINEGRAPHDATA } from "@/data";
+import { BADGEDATA, GROWTHCARDSECTIONDATA, LINEGRAPHDATA } from "@/data";
+import SectionCard from "./SectionCard";
 
 function GrowthCard() {
   const [sliderIDX, setSliderIDX] = useState(3);
-  const [lineGraphData, setLineGraphData] = useState({});
+  const [lineGraphData, setLineGraphData] = useState({returnPercentage:"",time:"",values:[]});
 
   const fetchGraphData = useCallback((value: string) => {
     const data = LINEGRAPHDATA.data.find((item) => item.time === value);
-    setLineGraphData({ ...data });
+    setLineGraphData({ returnPercentage: data?.returnPercentage, time:data?.time, values:data?.values });
   }, []);
 
   useEffect(() => {
     fetchGraphData("3Y");
   }, [fetchGraphData]);
-
+  //w-1 h-68 md:w-2/3 md:h-2/3
   return (
-    <div className="w-1/2 flex flex-col px-2">
+    <div className="flex flex-col px-2 md:w-1/2">
       <span className="text-2xl font-semibold text-gray-700">
         Axis Small Cap Fund Direct Growth
       </span>
@@ -54,6 +55,9 @@ function GrowthCard() {
           onTabChange={fetchGraphData}
         />
       </div>
+      <SectionCard
+        data={GROWTHCARDSECTIONDATA}
+      />
     </div>
   );
 }

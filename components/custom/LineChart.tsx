@@ -51,7 +51,7 @@ const LineChart = ({ label, value }: { label: string[]; value: number[] }) => {
   };
 
   return (
-    <div>
+    <div >
       <Line data={data} options={options} />
     </div>
   );

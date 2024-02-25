@@ -11,7 +11,6 @@ import { Button } from "../ui/button";
 
 function LoginDialog() {
   return (
-    <div>
       <Dialog>
         <DialogTrigger className="bg-buttongreen rounded-md py-3 text-xs px-5 font-medium  hover:bg-buttonHoverGreen hover:text-white text-white">
           Login/Register
@@ -51,7 +50,6 @@ function LoginDialog() {
           </div>
         </DialogContent>
       </Dialog>
-    </div>
   );
 }
 
