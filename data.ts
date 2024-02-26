@@ -28,7 +28,6 @@ export const CALCULATORFACTOR = {
     },
   ],
 };
-
 export const LINEGRAPHDATA = {
   label: ["a", "b", "c", "d", "e", "f"],
   time: ["1M", "6M", "1Y", "3Y", "5Y", "All"],
@@ -65,16 +64,13 @@ export const LINEGRAPHDATA = {
     },
   ],
 };
-
 export const BADGEDATA = ["Equity", "Small Cap", "Very High Risk"];
-
 export const GROWTHCARDSECTIONDATA = [
   { key: "NAV: 23 Feb 2024", value: "₹261.44" },
   { key: "Min. SIP amount", value: "₹1,000" },
   { key: "Rating", value: "3 ★" },
   { key: "Fund size", value: "₹15,663.84Cr" },
 ];
-
 export const TABLEDATA = [
   {
     id: "m5gr84i9",
@@ -217,7 +213,6 @@ export const TABLEDATA = [
     Assets: "8.88%",
   },
 ];
-
 export const TABLECOLUMS = [
   {
     accessorKey: "Name",
@@ -236,7 +231,6 @@ export const TABLECOLUMS = [
     header: "Assets",
   },
 ];
-
 export const ADVANCERATIOINFODATA = [
   {
     key: "P/E (Price/ Earning) ratio",
@@ -269,7 +263,6 @@ export const ADVANCERATIOINFODATA = [
       "Weighted average of the sortino ratio of underlying securities to help evaluate the returns of an investment for a given level of bad risk. Higher sortino ratio, better is the investment. Sortino ratio>2 is considered to be good.",
   },
 ];
-
 export const RETURNRANKDATA = [
   {
     id: "1234",
@@ -296,7 +289,6 @@ export const RETURNRANKDATA = [
     All: "NA",
   },
 ];
-
 export const RETURNRANKDATAB = [
   {
     id: "1234",
@@ -323,7 +315,6 @@ export const RETURNRANKDATAB = [
     All: "NA",
   },
 ];
-
 export const RETURNRANKCOLUMS = [
   {
     accessorKey: "Name",
@@ -346,7 +337,6 @@ export const RETURNRANKCOLUMS = [
     header: "All",
   },
 ];
-
 export const RETURNRANKTERMS = [
   {
     key: "Annualised returns",
@@ -359,7 +349,6 @@ export const RETURNRANKTERMS = [
     value: "The total return of a mutual fund over a given period",
   },
 ];
-
 export const ELERTDATA = [
   {
     key: "Expense ratio: 0.70%",
@@ -378,5 +367,240 @@ export const ELERTDATA = [
     value: [
       "Returns are taxed at 15%, if you redeem before one year. After 1 year, you are required to pay LTCG tax of 10% on returns of Rs 1 lakh+ in a financial year.",
     ],
+  },
+];
+export const FUNDMANAGMENTDATA = [
+  {
+    name: "Sanjeev Sharma",
+    date: "Oct 2019 - Present",
+    innerData: [
+      {
+        key: "Education",
+        value: [
+          "Mr Sharma is a Commerce Graduate and PGDBA(Finance) from Symbosis, Pune",
+        ],
+      },
+      {
+        key: "Experience",
+        value: [
+          "He has total work experience of 17 years including 13 years of experience in the financial market. He specializes in identifying crucial inflexion points in securities.",
+        ],
+      },
+      {
+        key: "Also manages these schemes",
+        value: [
+          "https://resources.groww.in/web-assets/rc-p.js?v=38127296",
+          "//assets-netstorage.groww.in/web-assets/nbg_mobile/prod/_next/static/chunks/67923-09e8d22cdf923202.js",
+          "//assets-netstorage.groww.in/web-assets/nbg_mobile/prod/_next/static/chunks/97612-64df2b7ee812cd50.js",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Priya Patel",
+    date: "Jan 2015 - Present",
+    innerData: [
+      {
+        key: "Education",
+        value: [
+          "Ms Patel holds a Bachelor's degree in Computer Science from University of Mumbai and a Master's degree in Business Administration from Indian Institute of Management, Ahmedabad.",
+        ],
+      },
+      {
+        key: "Experience",
+        value: [
+          "She has over 12 years of experience in the technology sector, specializing in software development and project management. Prior to joining the current organization, she worked with leading IT firms on various cutting-edge projects.",
+        ],
+      },
+      {
+        key: "Also manages these projects",
+        value: [
+          "https://example.com/project1",
+          "https://example.com/project2",
+          "https://example.com/project3",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Rahul Singh",
+    date: "May 2010 - Present",
+    innerData: [
+      {
+        key: "Education",
+        value: [
+          "Mr. Singh holds a Bachelor's degree in Electrical Engineering from the Indian Institute of Technology, Delhi and a Master's degree in Business Administration from Harvard Business School.",
+        ],
+      },
+      {
+        key: "Experience",
+        value: [
+          "He has accumulated over 15 years of diversified experience in the energy sector, focusing on renewable energy and sustainability. Prior to his current role, Rahul has worked with leading global firms on numerous renewable energy projects across the globe.",
+        ],
+      },
+      {
+        key: "Also manages these projects",
+        value: [
+          "https://example.com/renewable-project1",
+          "https://example.com/renewable-project2",
+          "https://example.com/renewable-project3",
+        ],
+      },
+    ],
+  },
+];
+export const COMPARISIONDATA = [
+  [
+    {
+      icon: "https://assets-netstorage.groww.in/mf-assets/logos/escorts_groww.png",
+      name: "Quant Small Cap Fund Direct Plan Growth",
+    },
+    {
+      icon: "https://assets-netstorage.groww.in/mf-assets/logos/reliance_groww.png",
+      name: "Nippon India Small Cap Fund Direct Growth",
+    },
+  ],
+  [
+    {
+      icon: "https://assets-netstorage.groww.in/mf-assets/logos/escorts_groww.png",
+      name: "Quant Small Cap Fund Direct Plan Growth",
+    },
+    {
+      icon: "https://assets-netstorage.groww.in/mf-assets/logos/icici_groww.png",
+      name: "ICICI Prudential Smallcap Fund Direct Plan Growth",
+    },
+  ],
+];
+export const ADVANCERATIODATA = [
+  { key: "Top 5", value: "24%" },
+  { key: "Top 20", value: "52%" },
+  { key: "P/E Ratio", value: "24.24%" },
+  { key: "P/B Ratio", value: "2.58%" },
+  { key: "Alpha", value: "11.17%" },
+  { key: "Beta", value: "1.03%" },
+  { key: "Sharpe", value: "1.58%" },
+  { key: "Sortino", value: "2.85%" },
+];
+export const MININVESTAMTDATA = [
+  { key: "Min. for 1st investment", value: "₹5000" },
+  { key: "Min. for 2st investment", value: "₹1000" },
+  { key: "Min. for SIP", value: "₹1000" },
+];
+export const PEERCOMPARISONDATA = [
+  {
+    id: "m5gr84i9",
+    Name: "Nippon India Small Cap Fund Direct Growth",
+    Rating: "4",
+    OneY: "59.7",
+    ThreeY: "31.8",
+    FundSize: "45894.01",
+  },
+  {
+    id: "xyz789abc",
+    Name: "Vanguard Total Stock Market Index Fund",
+    Rating: "5",
+    OneY: "65.2",
+    ThreeY: "28.6",
+    FundSize: "102500.00",
+  },
+  {
+    id: "def456uvw",
+    Name: "Fidelity Contrafund",
+    Rating: "4",
+    OneY: "55.8",
+    ThreeY: "33.7",
+    FundSize: "78200.00",
+  },
+  {
+    id: "ghi789jkl",
+    Name: "American Funds Growth Fund of America",
+    Rating: "5",
+    OneY: "62.3",
+    ThreeY: "29.5",
+    FundSize: "95600.00",
+  },
+  {
+    id: "mno123pqr",
+    Name: "T. Rowe Price Blue Chip Growth Fund",
+    Rating: "4",
+    OneY: "58.6",
+    ThreeY: "31.2",
+    FundSize: "85300.00",
+  },
+];
+export const PEERCOMPARISONCOLDATA = [
+  {
+    accessorKey: "Name",
+    header: "Equity, Small Cap funds",
+  },
+  {
+    accessorKey: "Rating",
+    header: "Rating",
+  },
+  {
+    accessorKey: "OneY",
+    header: "1Y",
+  },
+  {
+    accessorKey: "ThreeY",
+    header: "3Y",
+  },
+  {
+    accessorKey: "FundSize",
+    header: "Fund Size(Cr)",
+  },
+];
+export const ELERTTERMSDATA = [
+  {
+    key: "Expense ratio",
+    value:
+      "A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company’s fund assets used for administrative, management, advertising, and other expenses.",
+  },
+  {
+    key: "Exit load",
+    value:
+      "A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.",
+  },
+  {
+    key: "Tax",
+    value:
+      "A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund.",
+  },
+  {
+    key: "Stamp duty",
+    value:
+      "A form of tax payable for the purchase or sale of an asset or security.",
+  },
+];
+export const FAQDATA = [
+  {
+    title:
+      "What kind of returns does Quant Small Cap Fund Direct Plan Growth provide?",
+    value:
+      "The Quant Small Cap Fund Direct Plan Growth has been there from 07 Jan 2013 and the average annual returns provided by this fund is 75.86% since its inception.",
+  },
+  {
+    title:
+      "How does the performance of SBI Bluechip Fund - Direct Plan - Growth look over the years?",
+    value:
+      "The SBI Bluechip Fund - Direct Plan - Growth has consistently delivered strong performance over the years. Since its inception on 14 February 2015, the fund has achieved an average annual return of 12.5%.",
+  },
+  {
+    title:
+      "What are the historical returns of HDFC Balanced Advantage Fund - Direct Plan - Growth?",
+    value:
+      "HDFC Balanced Advantage Fund - Direct Plan - Growth has shown impressive performance since its inception on 15 June 2016. Over the years, it has delivered an average annual return of 14.2%.",
+  },
+  {
+    title:
+      "Can you provide details on the risk profile of Aditya Birla Sun Life Tax Relief 96 - Direct Plan - Growth?",
+    value:
+      "Aditya Birla Sun Life Tax Relief 96 - Direct Plan - Growth is considered to have a moderate risk profile. While it aims for long-term capital appreciation, investors should be mindful of market fluctuations. It's crucial to assess your risk tolerance before considering this investment.",
+  },
+  {
+    title:
+      "How has the performance of ICICI Prudential Bluechip Fund - Direct Plan - Growth been over the past decade?",
+    value:
+      "ICICI Prudential Bluechip Fund - Direct Plan - Growth has demonstrated strong performance over the past decade. Since its inception on 01 January 2010, the fund has delivered an average annual return of 11.8%.",
   },
 ];

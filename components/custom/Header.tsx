@@ -7,7 +7,7 @@ function Header() {
     <div className="flex place-content-evenly py-3 border-b px-2 flex-col md:flex-row md:items-center ">
       <img
         className="size-fit"
-        src="https://storage.googleapis.com/groww-assets/web-assets/img/website-logo/groww-logo-light.svg"
+        src="https://logos-world.net/wp-content/uploads/2023/10/logos-world.net_3.png"
         alt="grow_icon"
       />
       <div className="flex place-content-between md:w-1/2">
