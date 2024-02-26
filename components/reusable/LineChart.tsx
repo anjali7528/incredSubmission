@@ -1,5 +1,3 @@
-"use client";
-import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
 import {
   ArcElement,
@@ -36,10 +34,10 @@ const LineChart = ({ label, value }: { label: string[]; value: number[] }) => {
   const options = {
     scales: {
       y: {
-        display: false, // Remove y-axis
+        display: false, 
       },
       x: {
-        display: false, // Remove y-axis
+        display: false, 
       },
     },
     plugins: {

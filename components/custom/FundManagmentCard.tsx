@@ -1,20 +1,19 @@
-import React from "react";
-import CustomGroupAcordian from "./CustomGroupAcordian";
-import BasicDataCard from "./BasicDataCard";
-import { ELERTDATA, FUNDMANAGMENTDATA } from "@/data";
+import CustomGroupAcordian from "../reusable/CustomGroupAcordian";
+import BasicDataCard from "../reusable/BasicDataCard";
+import { FUNDMANAGMENTDATA } from "@/data";
 
 function FundManagmentCard() {
   return (
-    <div className="flex flex-wrap flex-col">
-        <span className="text-xl">Fund Management</span>
-      {FUNDMANAGMENTDATA.map((object, idx) => {
+    <div>
+      <div className="text-xl font-semibold mb-2">Fund Managment</div>
+      {FUNDMANAGMENTDATA.map((item, idx) => {
         return (
           <CustomGroupAcordian
-            heading={object.name}
-            subHeading={object.date}
+            title={item.name}
+            subHeading={item.date}
             key={idx}
           >
-            <BasicDataCard key={idx} data={object.innerData} />
+            <BasicDataCard data={item.innerData} />
           </CustomGroupAcordian>
         );
       })}

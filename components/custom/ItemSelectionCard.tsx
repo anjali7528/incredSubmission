@@ -1,10 +1,10 @@
 "use client";
-import React, { useState, useMemo } from "react";
-import { Card } from "../ui/card";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
+import { useState, useMemo } from "react";
+import { Card } from "../reusable/card";
+import { Button } from "../reusable/button";
+import { Input } from "../reusable/input";
 import { getNextMonthFirstDate } from "@/util/helper";
-import SliderTabs from "./SliderTabs";
+import SliderTabs from "../reusable/SliderTabs";
 
 function ItemSelectionCard() {
   const [sliderIDX, setSliderIDX] = useState(0);
@@ -86,8 +86,8 @@ function ItemSelectionCard() {
   }, [sliderIDX, sipAmount, selectedDate, valError]);
 
   return (
-    <Card className="sm:w-1/2 lg:w-1/4 w-full">
-      <div className="flex flex-row gap-3  border-b">
+    <Card className="w-96">
+      <div className="flex flex-row gap-3 border-b">
         <SliderTabs
           tabs={["MONTHLY SIP", "ONE TIME"]}
           setSliderIDX={setSliderIDX}

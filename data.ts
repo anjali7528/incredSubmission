@@ -1,3 +1,46 @@
+export const HOLDINGCHARTDATA = {
+  labels: ["Equity", "Debt", "Cash Split"],
+  values: [95.1, 3.9, 1.0],
+  colors: ["#fff3c8", "#84a4ff", "#5367ff"],
+  offsetColors: ["#fff3c8", "#84a4ff", "#5367ff"],
+  cutOffText: "₹15,664Cr",
+};
+export const arr= ["1M", "6M", "1Y", "3Y", "5Y", "All"]
+export const yearsArr = ["1 year", "3 years", "5 years"];
+export const EQUITYSECTORDATA = {
+  labels: [
+    "Energy",
+    "Financial",
+    "Construction",
+    "Services",
+    "Metals and Mining",
+    "Healthcare",
+    "Consumer Staples",
+    "others",
+  ],
+  values: [17.1, 13.8, 13.0, 10.7, 9.8, 9.4, 6.9, 19.3],
+  colors: [
+    "#ffb61b",
+    "#66e3c4",
+    "#5367ff",
+    "#5367ff",
+    "#eb5b3c",
+    "#893168",
+    "#e94967",
+    "#9191e9",
+  ],
+  offsetColors: [
+    "#ffb61b",
+    "#66e3c4",
+    "#5367ff",
+    "#5367ff",
+    "#eb5b3c",
+    "#893168",
+    "#e94967",
+    "#9191e9",
+  ],
+  cutOffText: "₹14,896Cr",
+};
 export const CALCULATORFACTOR = {
   monthly: [
     {
@@ -490,7 +533,7 @@ export const PEERCOMPARISONDATA = [
   {
     id: "m5gr84i9",
     Name: "Nippon India Small Cap Fund Direct Growth",
-    Rating: "4",
+    Rating: "4 ★",
     OneY: "59.7",
     ThreeY: "31.8",
     FundSize: "45894.01",
@@ -498,7 +541,7 @@ export const PEERCOMPARISONDATA = [
   {
     id: "xyz789abc",
     Name: "Vanguard Total Stock Market Index Fund",
-    Rating: "5",
+    Rating: "5 ★",
     OneY: "65.2",
     ThreeY: "28.6",
     FundSize: "102500.00",
@@ -506,7 +549,7 @@ export const PEERCOMPARISONDATA = [
   {
     id: "def456uvw",
     Name: "Fidelity Contrafund",
-    Rating: "4",
+    Rating: "4 ★",
     OneY: "55.8",
     ThreeY: "33.7",
     FundSize: "78200.00",
@@ -514,7 +557,7 @@ export const PEERCOMPARISONDATA = [
   {
     id: "ghi789jkl",
     Name: "American Funds Growth Fund of America",
-    Rating: "5",
+    Rating: "5 ★",
     OneY: "62.3",
     ThreeY: "29.5",
     FundSize: "95600.00",
@@ -522,7 +565,7 @@ export const PEERCOMPARISONDATA = [
   {
     id: "mno123pqr",
     Name: "T. Rowe Price Blue Chip Growth Fund",
-    Rating: "4",
+    Rating: "4 ★",
     OneY: "58.6",
     ThreeY: "31.2",
     FundSize: "85300.00",
@@ -604,3 +647,14 @@ export const FAQDATA = [
       "ICICI Prudential Bluechip Fund - Direct Plan - Growth has demonstrated strong performance over the past decade. Since its inception on 01 January 2010, the fund has delivered an average annual return of 11.8%.",
   },
 ];
+export const PROSNCONSTERMS = [
+  {
+    key: " ",
+    value:
+      "This content is derived from publicly available information, internal sources, and other third-party sources believed to be reliable. We, at Nextbillion Technology Pvt. Ltd. (Groww), do not guarantee the accuracy of such information, or assure its completeness, or warrant that such information will not be changed. All comparisons are done with the category average metrics for this category.",
+  },
+];
+
+export const PROSARRAY = ["Consistently higher annualised returns than category average for the past 1Y, 3Y and 5Y","Higher alpha: 11.17  The fund has generated returns higher than benchmark - NIFTY Smallcap 250 Total Return Index - in the last 3Y"]
+
+export const CONSARRAY = ["10Y annualised returns lower than category average by 1.86%"]

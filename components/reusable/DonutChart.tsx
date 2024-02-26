@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 import {
   ArcElement,
@@ -54,7 +54,7 @@ const DonutChart = ({
         const idx =
           chartElement[0]?.index === undefined ? -1 : chartElement[0]?.index;
         if (idx !== hoverIdx) {
-          console.log("hello",idx);
+          console.log("hello", idx);
           setHoverIdx(idx);
         }
       }
@@ -78,14 +78,16 @@ const DonutChart = ({
   };
 
   return (
-    <div className="flex items-center gap-10 justify-between flex-wrap">
-      <div className="flex flex-col w-1/2">
+    <div className="flex md:items-center gap-10 justify-between flex-wrap w-full">
+      <div className="flex flex-col w-full md:w-fit">
         {labels.map((item, idx) => {
           return (
             <div
               key={idx}
               className={`grid grid-cols-12 py-1 justify-center items-center ${
-                hoverIdx === -1 || hoverIdx === idx ? 'opacity-100' : 'opacity-30'
+                hoverIdx === -1 || hoverIdx === idx
+                  ? "opacity-100"
+                  : "opacity-30"
               }`}
             >
               <div
@@ -98,7 +100,7 @@ const DonutChart = ({
           );
         })}
       </div>
-      <div className=" w-60 h-60">
+      <div className=" w-full md:w-60 h-60 flex justify-center">
         <Doughnut data={data2} options={options} plugins={[textCenter]} />
       </div>
     </div>
